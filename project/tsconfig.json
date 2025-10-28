@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "noEmit": true,
+    "target": "ES2018",
+    "lib": ["dom", "es2018"]
+  },
+  "include": ["js/**/*.js"],
+  "exclude": ["node_modules"]
+}

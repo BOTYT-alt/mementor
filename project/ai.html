@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat - MyMentor</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="logo">MyMentor</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="deep-search.html">Deep Search</a></li>
+                <li><a href="visual.html">Visual Learning</a></li>
+                <li><a href="audio.html">Audio Learning</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="chat-container">
+        <div class="chat-panel">
+            <aside class="chat-sidebar">
+                <h3>Your Study Tools</h3>
+                <ul>
+                    <li><a href="visual.html">Generate Visuals</a></li>
+                    <li><a href="audio.html">Create Audio Lessons</a></li>
+                    <li><a href="deep-search.html">Search Resources</a></li>
+                </ul>
+                <div class="quick-topics">
+                    <h4>Quick Prompts</h4>
+                    <button class="btn btn-small" onclick="prefill('Explain photosynthesis for beginners')">Photosynthesis</button>
+                    <button class="btn btn-small" onclick="prefill('Summarize the causes of WWI')">World War I</button>
+                    <button class="btn btn-small" onclick="prefill('Step-by-step solving quadratic equations')">Quadratics</button>
+                </div>
+            </aside>
+
+            <section class="chat-main">
+                <div class="chat-header">
+                    <h1>AI Mentor Chat</h1>
+                    <p>Ask questions and get personalized guidance</p>
+                </div>
+
+                <div class="chat-messages" id="chatMessages">
+                    <!-- Messages will be inserted here by JavaScript -->
+                </div>
+
+                <form id="chatForm" class="chat-input-form">
+                    <input type="text" id="userInput" placeholder="Type your question here..." required>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 MyMentor. All rights reserved.</p>
+    </footer>
+
+    <script src="js/ai-chat.js"></script>
+</body>
+</html>

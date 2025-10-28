@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Learning - MyMentor</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="logo">MyMentor</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="deep-search.html">Deep Search</a></li>
+                <li><a href="audio.html">Audio Learning</a></li>
+                <li><a href="ai.html">AI Chat</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-container visual-page">
+        <div class="visual-hero">
+            <h1>Visual Learning — AI-Generated Videos & Diagrams</h1>
+            <p class="section-sub">Type a topic and generate a short explanatory video with key diagrams and a study summary.</p>
+        </div>
+
+        <div class="visual-tools">
+            <div class="left">
+                <label for="topicInput">Enter a topic</label>
+                <textarea id="topicInput" placeholder="E.g., 'Cell division: mitosis vs meiosis'"></textarea>
+                <div class="controls">
+                    <select id="videoStyle"><option>Explainer (animated)</option><option>Lecture (narrative)</option><option>Whiteboard</option></select>
+                    <button class="btn btn-primary" onclick="generateVideo()">Generate Video</button>
+                </div>
+            </div>
+
+            <div class="right">
+                <div id="videoPreview" class="video-preview rich">
+                    <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=900&q=60" alt="video placeholder">
+                    <div class="video-meta">
+                        <h4>Example: Cellular Biology</h4>
+                        <p>Duration: ~4 mins • Format: Animated Explainer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 MyMentor. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        function generateVideo() {
+            // Stub function - to be implemented with actual video generation API
+            const topicInput = document.getElementById('topicInput');
+            const videoPreview = document.getElementById('videoPreview');
+            
+            if (topicInput.value.trim()) {
+                videoPreview.innerHTML = `
+                    <div class="generation-message">
+                        <p>Generating video for: "${topicInput.value}"</p>
+                        <p>This feature will be implemented in the next version.</p>
+                    </div>
+                `;
+            }
+        }
+    </script>
+</body>
+</html>

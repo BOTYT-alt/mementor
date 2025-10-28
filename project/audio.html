@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Learning - MyMentor</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="logo">MyMentor</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="deep-search.html">Deep Search</a></li>
+                <li><a href="visual.html">Visual Learning</a></li>
+                <li><a href="ai.html">AI Chat</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-container audio-page">
+        <div class="audio-hero">
+            <h1>Audio Learning — Create Lessons & Summaries</h1>
+            <p class="section-sub">Turn topics into short audio lessons or podcast-style summaries for focused listening.</p>
+        </div>
+
+        <div class="audio-tools">
+            <div class="left">
+                <label for="topicInputAudio">Enter your topic</label>
+                <textarea id="topicInputAudio" placeholder="E.g., 'Origins of the Renaissance'"></textarea>
+                <div class="controls">
+                    <select id="audioTone"><option>Conversational</option><option>Narrative</option><option>Lecture-style</option></select>
+                    <button class="btn btn-primary" onclick="generateAudio()">Generate Audio</button>
+                </div>
+            </div>
+            <div class="right">
+                <div id="audioPlayer" class="audio-player rich">
+                    <p class="muted">No audio yet — generate a lesson to preview here.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 MyMentor. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        function generateAudio() {
+            // Stub function - to be implemented with actual audio generation API
+            const topicInput = document.getElementById('topicInput');
+            const audioPlayer = document.getElementById('audioPlayer');
+            
+            if (topicInput.value.trim()) {
+                audioPlayer.innerHTML = `
+                    <div class="generation-message">
+                        <p>Generating audio lesson for: "${topicInput.value}"</p>
+                        <p>This feature will be implemented in the next version.</p>
+                    </div>
+                `;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - MyMentor</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="logo">MyMentor</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="deep-search.html">Deep Search</a></li>
+                <li><a href="visual.html">Visual Learning</a></li>
+                <li><a href="audio.html">Audio Learning</a></li>
+                <li><a href="ai.html">AI Chat</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-container profile-page">
+        <div class="profile-hero">
+            <h1>Your Learning Profile</h1>
+            <p class="section-sub">Capture your preferences, goals and progress. MyMentor will tailor recommendations based on your profile.</p>
+        </div>
+
+        <div class="profile-grid">
+            <section class="profile-form card">
+                <h2>Account & Preferences</h2>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+
+                <label>Learning Preferences</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" value="visual"> Visual</label>
+                    <label><input type="checkbox" value="auditory"> Auditory</label>
+                    <label><input type="checkbox" value="reading"> Reading</label>
+                    <label><input type="checkbox" value="kinesthetic"> Kinesthetic</label>
+                </div>
+
+                <label>Academic Goals</label>
+                <textarea id="goals" placeholder="What do you want to achieve?"></textarea>
+
+                <button class="btn btn-primary" onclick="saveProfile()">Save Profile</button>
+            </section>
+
+            <aside class="progress-panel card">
+                <h2>Progress Snapshot</h2>
+                <div class="progress-item">
+                    <div class="label">Algebra</div>
+                    <div class="progress-bar"><div style="width:62%"></div></div>
+                </div>
+                <div class="progress-item">
+                    <div class="label">Biology</div>
+                    <div class="progress-bar"><div style="width:32%"></div></div>
+                </div>
+
+                <h3>Recommended</h3>
+                <ul class="recommended-list">
+                    <li><a href="visual.html">Cellular Biology: Visual Path</a></li>
+                    <li><a href="ai.html">Algebra: Step-by-step Tutor</a></li>
+                </ul>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 MyMentor. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        function saveProfile() {
+            // Stub function - to be implemented with actual profile saving functionality
+            alert('Profile saving will be implemented in the next version');
+        }
+    </script>
+</body>
+</html>

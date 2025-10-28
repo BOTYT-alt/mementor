@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Search - MyMentor</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="logo">MyMentor</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="visual.html">Visual Learning</a></li>
+                <li><a href="audio.html">Audio Learning</a></li>
+                <li><a href="ai.html">AI Chat</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-container enhanced-search">
+        <div class="search-header">
+            <h1>Deep Educational Search</h1>
+            <p class="section-sub">Filter by subject, format and level to find the best learning resources quickly.</p>
+            <div class="search-row">
+                <input type="text" id="searchInput" placeholder="Search for educational content, e.g. 'cellular respiration'">
+                <button class="btn btn-primary">Search</button>
+            </div>
+            <div class="filters-row">
+                <select id="subjectFilter"><option value="">All Subjects</option><option value="math">Mathematics</option><option value="science">Science</option><option value="history">History</option><option value="literature">Literature</option></select>
+                <select id="formatFilter"><option value="">All Formats</option><option value="video">Video</option><option value="text">Text</option><option value="interactive">Interactive</option></select>
+                <select id="levelFilter"><option value="">All Levels</option><option value="beginner">Beginner</option><option value="intermediate">Intermediate</option><option value="advanced">Advanced</option></select>
+            </div>
+        </div>
+
+        <div id="searchResults" class="search-results enhanced-results">
+            <div class="result-grid">
+                <!-- sample rich results -->
+                <article class="result-card">
+                    <img src="https://images.unsplash.com/photo-1581092335086-6e6b2f1f6a39?auto=format&fit=crop&w=900&q=60" alt="resource1">
+                    <div class="result-body">
+                        <h3>Introduction to Cellular Biology</h3>
+                        <p>Video lecture (12m) • Beginner • 4.7⭐</p>
+                        <p class="result-excerpt">A concise visual explanation of cell components and their functions, accompanied by diagrams and quick exercises.</p>
+                        <a class="btn btn-small" href="visual.html">Open</a>
+                    </div>
+                </article>
+
+                <article class="result-card">
+                    <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=900&q=60" alt="resource2">
+                    <div class="result-body">
+                        <h3>Practice Problems: Algebra I</h3>
+                        <p>Interactive • Intermediate • 4.6⭐</p>
+                        <p class="result-excerpt">Step-by-step worked examples and interactive quizzes to reinforce skills.</p>
+                        <a class="btn btn-small" href="ai.html">Start Tutor</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 MyMentor. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
